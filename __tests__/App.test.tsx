@@ -4,10 +4,10 @@
 
 import React from 'react';
 import ReactTestRenderer from 'react-test-renderer';
-import App from '../App';
+import { PokedexApp } from '../src/PokedexApp';
 
 test('renders correctly', async () => {
   await ReactTestRenderer.act(() => {
-    ReactTestRenderer.create(<App />);
+    ReactTestRenderer.create(<PokedexApp />);
   });
 });
